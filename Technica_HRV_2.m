@@ -32,9 +32,9 @@ disp(['LF Power: ', num2str(LF)]);
 disp(['HF Power: ', num2str(HF)]);
 
 
-dataField1 = [0 0 0 0 0 0 0 0 0 VLF];
-dataField2  =[0 0 0 0 0 0 0 0 0 LF];
-dataField3 = [0 0 0 0 0 0 0 0 0 HF];
+dataField1 = [ VLF];
+dataField2  =[LF];
+dataField3 = [HF];
 tStamps = [datetime('now')-minutes(9):minutes(1):datetime('now')]';
 dataTable = timetable(tStamps,dataField1,dataField2,dataField3);
 channelID = 2470870;
